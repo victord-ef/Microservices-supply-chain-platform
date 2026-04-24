@@ -72,3 +72,41 @@ This project enforces security controls across five layers:
 ├── docs/          # Architecture and operational documentation
 ├── scripts/       # Helper scripts for local setup and validation
 └── .github/       # CI/CD workflows
+
+## Initial MVP Scope
+
+- orders-service
+- inventory-service
+- frontend
+- worker
+- local Kubernetes with kind
+- CI security workflow
+- image scanning, SBOM generation, and signing
+- admission policy checks
+
+## Planned Security Controls
+
+- Gitleaks for secret scanning
+- CodeQL for SAST
+- Trivy for dependency, container, and config scanning
+- Syft for SBOM generation
+- Cosign for image signing and verification
+- Kyverno for admission control and policy enforcement
+- Falco for runtime detection
+- Prometheus and Grafana for observability
+
+## Local Development
+
+### Prerequisites
+
+- Docker
+- kind
+- kubectl
+- kustomize
+- Python 3.11+
+- make
+
+### Run locally
+
+```bash
+make up
