@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  orders-service:
+    build: ./apps/orders-service
+    ports:
+      - "8001:8000"
+    environment:
+      APP_ENV: dev
+      SERVICE_NAME: orders-service
+
+  inventory-service:
+    build: ./apps/inventory-service
+    ports:
+      - "8002:8000"
+    environment:
+      APP_ENV: dev
+      SERVICE_NAME: inventory-service
+
+  worker:
+    build: ./apps/worker
+    environment:
+      APP_ENV: dev
+      SERVICE_NAME: worker
+
+  frontend:
+    build: ./apps/frontend
+    ports:
+      - "8080:80"
