@@ -110,3 +110,5 @@ This project enforces security controls across five layers:
 
 ```bash
 make up
+make kind-bootstrap
+make deploy-dev
