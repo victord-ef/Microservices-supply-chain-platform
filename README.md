@@ -112,3 +112,6 @@ This project enforces security controls across five layers:
 make up
 make kind-bootstrap
 make deploy-dev
+
+## License
+MIT
