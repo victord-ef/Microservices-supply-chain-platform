@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.idea/
+.vscode/
+.DS_Store
+*.sbom.json
+coverage.xml
+htmlcov/
+.terraform/
+terraform.tfstate
+terraform.tfstate.*

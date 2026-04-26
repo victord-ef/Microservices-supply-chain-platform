@@ -1,0 +1,11 @@
+resources:
+  - namespace.yaml
+  - serviceaccount.yaml
+  - orders-deployment.yaml
+  - orders-service.yaml
+  - inventory-deployment.yaml
+  - inventory-service.yaml
+  - frontend-deployment.yaml
+  - frontend-service.yaml
+  - worker-deployment.yaml
+  - networkpolicy.yaml
